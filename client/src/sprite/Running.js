@@ -1,4 +1,4 @@
-class Running {
+export class Running {
 	constructor() {
 		let columnCount = 9
 		let rowCount = 4
