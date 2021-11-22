@@ -1,13 +1,16 @@
+import TiledImage from "../TiledImage.js"
+import { leftArrowOn, rightArrowOn, ctx } from "../page-register.js"
+
 export class Running {
 	constructor() {
-		let columnCount = 9
-		let rowCount = 4
+		let columnCount = 8
+		let rowCount = 1
 		let delay = 100
 		let loop = true
 		let scale = 3.0
 
 
-		this.tiledImage = new TiledImage("../../img/sprites/running - 100.png", columnCount, rowCount, delay, loop, scale)
+		this.tiledImage = new TiledImage("img/sprites/running - 100.png", columnCount, rowCount, delay, loop, scale)
 
 		this.x = 300
 		this.y = 200

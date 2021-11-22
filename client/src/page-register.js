@@ -1,12 +1,12 @@
 import {register} from './chat-api';
 import {Running} from './sprite/Running'
 
-let canvas = null;
-let ctx = null;
-let spriteList = [];
+export let canvas = null;
+export let ctx = null;
+export let spriteList = [];
 
-let leftArrowOn = false;
-let rightArrowOn = false;
+export let leftArrowOn = false;
+export let rightArrowOn = false;
 
 window.addEventListener("load", () => {
     document.querySelector("form").onsubmit = function () {
