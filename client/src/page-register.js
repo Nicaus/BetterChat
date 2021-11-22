@@ -1,4 +1,7 @@
 import {register} from './chat-api';
+import { BlondeSkater } from './sprite/BlondeSkater';
+import { GirlSkater } from './sprite/GirlSkater';
+import { GreenSkater } from './sprite/GreenSkater';
 import {Running} from './sprite/Running'
 
 export let canvas = null;
@@ -15,7 +18,7 @@ window.addEventListener("load", () => {
     canvas = document.querySelector("canvas");
     // ctx = document.getElementById("canvas").getContext("2d");
     ctx = canvas.getContext("2d")
-	spriteList.push(new Running)
+	spriteList.push(new GirlSkater)
 	tick();
 })
 
@@ -31,7 +34,7 @@ document.onkeyup = e =>{
 
 const tick = () => {
 	ctx.fillStyle = "white";
-	ctx.fillRect(0, 0, 600, 500);
+	ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 	for (let i = 0; i < spriteList.length; i++) {
 		let alive = spriteList[i].tick();

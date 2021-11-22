@@ -1,16 +1,16 @@
 import TiledImage from "../TiledImage.js"
 import { leftArrowOn, rightArrowOn, ctx } from "../page-register.js"
 
-export class Running {
+export class GreenSkater {
 	constructor() {
-		let columnCount = 8
+		let columnCount = 7
 		let rowCount = 1
 		let delay = 50
 		let loop = true
-		let scale = 0.5
+		let scale = 0.3
 
 
-		this.tiledImage = new TiledImage("img/sprites/running - 640.png", columnCount, rowCount, delay, loop, scale)
+		this.tiledImage = new TiledImage("img/sprites/skater green - 640.png", columnCount, rowCount, delay, loop, scale)
 
 		this.x = 300
 		this.y = 200
@@ -23,7 +23,7 @@ export class Running {
 		}
 
 		if (rightArrowOn){
-			this.x += 2.5
+			this.x += 5
 		}
 
 		if (!rightArrowOn && !leftArrowOn){
