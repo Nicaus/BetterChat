@@ -1,8 +1,8 @@
-import {register} from './chat-api';
+import { register } from './chat-api';
 import { BlondeSkater } from './sprite/BlondeSkater';
 import { GirlSkater } from './sprite/GirlSkater';
 import { GreenSkater } from './sprite/GreenSkater';
-import {Running} from './sprite/Running'
+import { Running } from './sprite/Running'
 import { Skateboard } from './sprite/Skateboard';
 
 export let canvas = null;

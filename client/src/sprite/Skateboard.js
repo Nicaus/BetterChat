@@ -11,13 +11,12 @@ export class Skateboard {
 
 		this.tiledImage = new TiledImage("img/sprites/rotating skateboard - 360.png", columnCount, rowCount, delay, loop, scale)
 
-		this.x = 300
-		this.y = 200
+		this.x = 350
+		this.y = 40
 	}
 
 
 	tick () {
-		
 		this.tiledImage.setPaused(false)
 
 		this.tiledImage.tick(this.x, this.y, ctx)
