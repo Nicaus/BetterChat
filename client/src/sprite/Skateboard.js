@@ -7,11 +7,11 @@ export class Skateboard {
 		let rowCount = 1
 		let delay = 100
 		let loop = true
-		let scale = 1
+		let scale = 0.9
 
 		this.tiledImage = new TiledImage("img/sprites/rotating skateboard - 360.png", columnCount, rowCount, delay, loop, scale)
 
-		this.x = 350
+		this.x = 90
 		this.y = 40
 	}
 
