@@ -3,6 +3,7 @@ import { BlondeSkater } from './sprite/BlondeSkater';
 import { GirlSkater } from './sprite/GirlSkater';
 import { GreenSkater } from './sprite/GreenSkater';
 import {Running} from './sprite/Running'
+import { Skateboard } from './sprite/Skateboard';
 
 export let canvas = null;
 export let ctx = null;
@@ -18,7 +19,7 @@ window.addEventListener("load", () => {
     canvas = document.querySelector("canvas");
     // ctx = document.getElementById("canvas").getContext("2d");
     ctx = canvas.getContext("2d")
-	spriteList.push(new GirlSkater)
+	spriteList.push(new Skateboard)
 	tick();
 })
 
