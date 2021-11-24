@@ -24,16 +24,6 @@ window.addEventListener("load", () => {
 	tick();
 })
 
-document.onkeydown = e =>{
-	if (e.key == "ArrowLeft") leftArrowOn = true;
-	else if (e.key == "ArrowRight") rightArrowOn = true;
-}
-
-document.onkeyup = e =>{
-	if (e.key == "ArrowLeft") leftArrowOn = false;
-	else if (e.key == "ArrowRight") rightArrowOn = false;
-}
-
 const tick = () => {
 	ctx.font = "50px Aclonica";
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
