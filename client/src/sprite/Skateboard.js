@@ -17,8 +17,13 @@ export class Skateboard {
 
 
 	tick () {
-		this.tiledImage.setPaused(false)
-
+		if (document.querySelector("canvas").onmouseover) {
+			this.tiledImage.setPaused(true);
+		}
+		else {
+			this.tiledImage.setPaused(false);
+		}
+	
 		this.tiledImage.tick(this.x, this.y, ctx)
 		return true;
 	}

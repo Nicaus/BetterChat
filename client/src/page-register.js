@@ -8,6 +8,7 @@ import { Skateboard } from './sprite/Skateboard';
 export let canvas = null;
 export let ctx = null;
 export let spriteList = [];
+export let backgroundImage = new Image();
 
 export let leftArrowOn = false;
 export let rightArrowOn = false;
@@ -17,8 +18,10 @@ window.addEventListener("load", () => {
         return register(this);
     }
     canvas = document.querySelector("canvas");
-    // ctx = document.getElementById("canvas").getContext("2d");
     ctx = canvas.getContext("2d")
+
+	backgroundImage.src = "img/background/Stage1.png"
+
 	spriteList.push(new Skateboard)
 	tick();
 })
@@ -34,9 +37,13 @@ document.onkeyup = e =>{
 }
 
 const tick = () => {
+	if (backgroundImage.complete){
+		ctx.drawImage(backgroundImage, 0, 0);
+	}
+
 	ctx.fillStyle = "white";
 	ctx.fillRect(0, 0, canvas.width, canvas.height);
-
+	
 	for (let i = 0; i < spriteList.length; i++) {
 		let alive = spriteList[i].tick();
 
