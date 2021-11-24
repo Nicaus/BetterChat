@@ -4,10 +4,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-}
-
-html{
-    background-image: url("../img/background/registersrc.png");
+    color: rgb(230, 119, 183);
 }
 
 body{
@@ -27,6 +24,15 @@ button{
     /* padding: 0; */
     border: none;
     background: none;
+}
+
+.regsrc{
+    background-image: url("../img/background/registersrc.png");
+}
+
+.indexsrc{
+    background-image: url("../img/gifs/GODSPEED_by_Davonte_Jolly.gif");
+    background-size: cover;
 }
 
 .centerDiv{
