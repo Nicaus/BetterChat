@@ -44,4 +44,8 @@ button{
 
 .hidden {
     display: none
- }
+}
+
+.test{
+    position: fixed;
+}
