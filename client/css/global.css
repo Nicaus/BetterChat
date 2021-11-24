@@ -36,7 +36,9 @@ button{
 }
 
 .centered {
-    position: fixed;
+    display: grid;
+    position: absolute;
+    /* align-items: center; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
