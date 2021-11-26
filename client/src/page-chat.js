@@ -1,3 +1,4 @@
+import Vue from 'vue'
 import {registerCallbacks, sendMessage, signout, chatMessageLoop} from './chat-api';
 
 window.addEventListener("load", () => {
