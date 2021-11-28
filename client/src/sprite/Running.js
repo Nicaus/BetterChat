@@ -1,5 +1,5 @@
 import TiledImage from "../TiledImage.js"
-import { leftArrowOn, rightArrowOn, ctx } from "../page-register.js"
+import { ctx } from "../page-register.js"
 
 export class Running {
 	constructor() {
@@ -12,26 +12,16 @@ export class Running {
 
 		this.tiledImage = new TiledImage("img/sprites/running - 640.png", columnCount, rowCount, delay, loop, scale)
 
-		this.x = 300
-		this.y = 200
+		this.x = 0
+		this.y = 90
+		this.speed = 4;
 	}
 
 
 	tick () {
-		if (leftArrowOn){
-			this.x -= 2
-		}
-
-		if (rightArrowOn){
-			this.x += 2.5
-		}
-
-		if (!rightArrowOn && !leftArrowOn){
-			this.tiledImage.setPaused(true)
-		}
-		else{
-			this.tiledImage.setPaused(false)
-		}
+		
+		this.x += this.speed
+		this.tiledImage.setPaused(false)
 
 		this.tiledImage.tick(this.x, this.y, ctx)
 		return true;

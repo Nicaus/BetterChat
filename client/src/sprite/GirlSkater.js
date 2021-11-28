@@ -9,11 +9,10 @@ export class GirlSkater {
 		let loop = true
 		let scale = 0.3
 
-
 		this.tiledImage = new TiledImage("img/sprites/girl skater - 640.png", columnCount, rowCount, delay, loop, scale)
 
-		this.x = 300
-		this.y = 400
+		this.x = 150
+		this.y = 40
 	}
 
 
