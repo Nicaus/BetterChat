@@ -1,4 +1,4 @@
-import {signin} from './chat-api';
+import { signin } from './chat-api';
 import { ctx, canvas } from "./page-register.js"
 import { Running } from './sprite/Running';
 import { GreenSkater } from './sprite/GreenSkater';
