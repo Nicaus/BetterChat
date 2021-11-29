@@ -9,29 +9,17 @@ export class BlondeSkater {
 		let loop = true
 		let scale = 0.3
 
-
 		this.tiledImage = new TiledImage("img/sprites/blonde skater - 640.png", columnCount, rowCount, delay, loop, scale)
 
-		this.x = 300
-		this.y = 200
-	}
+		this.x = 0
+		this.random = Math.random() * (550 - 50) + 50;
+		this.speed = Math.random() * (13 - 8) + 8;	}
 
 
 	tick () {
-		if (leftArrowOn){
-			this.x -= 2.5
-		}
-
-		if (rightArrowOn){
-			this.x += 5
-		}
-
-		if (!rightArrowOn && !leftArrowOn){
-			this.tiledImage.setPaused(true)
-		}
-		else{
-			this.tiledImage.setPaused(false)
-		}
+		this.y = this.random
+		this.x += this.speed
+		this.tiledImage.setPaused(false)
 
 		this.tiledImage.tick(this.x, this.y, ctx)
 		return true;

@@ -36,6 +36,7 @@ const tick = () => {
 			i--;
 		}
 	}
+
 	window.requestAnimationFrame(tick);
 }
 

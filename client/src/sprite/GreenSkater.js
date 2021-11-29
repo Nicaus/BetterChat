@@ -9,16 +9,16 @@ export class GreenSkater {
 		let loop = true
 		let scale = 0.3
 
-
 		this.tiledImage = new TiledImage("img/sprites/skater green - 640.png", columnCount, rowCount, delay, loop, scale)
 
 		this.x = 0
-		this.y = 750
-		this.speed = 8
+		this.random = Math.random() * (550 - 90) + 90;
+		this.speed = Math.random() * (13 - 8) + 8;
 	}
 
 
 	tick () {
+		this.y = this.random
 		this.x += this.speed
 		this.tiledImage.setPaused(false)
 

@@ -7,19 +7,19 @@ export class Running {
 		let rowCount = 1
 		let delay = 50
 		let loop = true
-		let scale = 0.5
-
+		let scale = 0.4
 
 		this.tiledImage = new TiledImage("img/sprites/running - 640.png", columnCount, rowCount, delay, loop, scale)
 
 		this.x = 0
-		this.y = 90
-		this.speed = 4;
+		this.random = Math.random() * (550 - 90) + 90;
+		this.speed = Math.random() * (12 - 5) + 5;
 	}
 
 
 	tick () {
-		
+		this.y = this.random
+
 		this.x += this.speed
 		this.tiledImage.setPaused(false)
 

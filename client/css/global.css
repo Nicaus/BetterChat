@@ -43,11 +43,11 @@ button{
     cursor: pointer;
 }
 
-.regsrc{
+.indexsrc{
     background-image: url("../img/background/registersrc.png");
 }
 
-.indexsrc{
+.regsrc{
     background-image: url("../img/gifs/GODSPEED_by_Davonte_Jolly.gif");
     background-size: cover;
 }
