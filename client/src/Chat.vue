@@ -1,5 +1,5 @@
 <template>
-    
+    <div>asfdbjaksfb</div>
 </template>
 
 
@@ -11,9 +11,5 @@ export default {
 
         }
     }
-    methods: {
-        
-    }
 }
 </script>
-
