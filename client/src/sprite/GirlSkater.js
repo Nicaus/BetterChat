@@ -1,5 +1,5 @@
 import TiledImage from "../TiledImage.js"
-import { leftArrowOn, rightArrowOn, ctx } from "../page-register.js"
+import { ctx } from "../page-register.js"
 
 export class GirlSkater {
 	constructor() {

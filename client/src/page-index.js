@@ -29,9 +29,22 @@ window.addEventListener("load", () => {
         return signin(this);
     }
 
-    running();
-    greenskater();
-    blondeskater();
+    let div = document.createElement("div");
+    div.onclick = () => {
+        div.remove();
+        greenskater();
+        blondeskater();
+        running();
+    }
+
+    let imgNode = document.createElement("img")
+    imgNode.src = "img/gifs/girl skater.gif"
+
+    div.append(imgNode);
+
+    let parent = document.querySelector("#gif")
+    parent.appendChild(div)
+
     tick();
 });
 
