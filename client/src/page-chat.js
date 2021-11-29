@@ -1,5 +1,12 @@
 import Vue from 'vue'
+import Chat from './Chat.vue'
 import {registerCallbacks, sendMessage, signout, chatMessageLoop} from './chat-api';
+
+new Vue({
+    el: 'container',
+    components: { Chat },
+    template: '<Chat/>'
+})
 
 window.addEventListener("load", () => {
     document.querySelector("textarea").onkeyup = function (evt) {
