@@ -13,7 +13,7 @@ export class GreenSkater {
 
 		this.x = 0
 		this.random = Math.random() * (550 - 90) + 90;
-		this.speed = Math.random() * (13 - 8) + 8;
+		this.speed = Math.random() * (12 - 8) + 8;
 	}
 
 

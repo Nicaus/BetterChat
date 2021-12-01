@@ -13,7 +13,7 @@ export class Running {
 
 		this.x = 0
 		this.random = Math.random() * (550 - 90) + 90;
-		this.speed = Math.random() * (12 - 5) + 5;
+		this.speed = Math.random() * (10 - 5) + 5;
 	}
 
 
