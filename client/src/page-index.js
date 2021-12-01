@@ -5,22 +5,10 @@ import { GreenSkater } from './sprite/GreenSkater';
 import { BlondeSkater } from './sprite/BlondeSkater';
 export let spriteList = [];
 
-export function running() {
+export function sprites(sprite, delay) {
     setInterval(function(){ 
-        spriteList.push(new Running);
-    }, 2000);
-}
-
-export function greenskater(){
-    setInterval(function(){
-        spriteList.push(new GreenSkater)
-    }, 4000);
-}
- 
-export function blondeskater(){
-    setInterval(function(){
-        spriteList.push(new BlondeSkater)
-    }, 5000);
+        spriteList.push(new sprite);
+    }, delay);
 }
 
 window.addEventListener("load", () => {
@@ -31,11 +19,9 @@ window.addEventListener("load", () => {
 
     window.onclick = () => {
         div.remove();
-        greenskater();
-        blondeskater();
-        running();
-        
-
+        sprites(Running, 2000);
+        sprites(GreenSkater, 4000);
+        sprites(BlondeSkater, 5000);
     }
 
     let imgNode = document.createElement("img")
