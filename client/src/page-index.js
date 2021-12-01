@@ -23,30 +23,34 @@ export function blondeskater(){
     }, 5000);
 }
 
-
 window.addEventListener("load", () => {
     document.querySelector("form").onsubmit = function () {
         return signin(this);
     }
-
     let div = document.createElement("div");
-    div.onclick = () => {
+
+    window.onclick = () => {
         div.remove();
         greenskater();
         blondeskater();
         running();
+        
+
     }
 
     let imgNode = document.createElement("img")
+    let parent = document.querySelector("#gif")
+
     imgNode.src = "img/gifs/girl skater.gif"
+    imgNode.style.width = 400 + "px"
 
     div.append(imgNode);
-
-    let parent = document.querySelector("#gif")
     parent.appendChild(div)
 
     tick();
 });
+
+
 
 const tick = () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);

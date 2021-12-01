@@ -4,7 +4,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    color: rgb(235, 174, 133);
+    color: rgb(182, 110, 62);
     font-family: 'Aclonica', sans-serif;
 }
 
@@ -29,7 +29,7 @@ input{
     display: block;
     align-items: center;
     text-align: center;
-    background-color: rgb(235, 174, 133);
+    background-color: rgba(235, 174, 133, 0.6);
     font-size: 20px;
     color: white;
     border-radius: 20px;
@@ -44,8 +44,8 @@ button{
 }
 
 .indexsrc{
-    /* width: 100%;
-    height: 100%; */
+    width: 100%;
+    height: 100%;
     background-image: url("../img/background/registersrc.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -74,7 +74,7 @@ button{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 7px solid rgb(235, 174, 133);
+    border: 7px solid rgb(231, 145, 88);
     font-size: 20px;
     color: white;
     border-radius: 20px;
@@ -93,3 +93,4 @@ button{
 .bkgdcolor{
     background-color: rgba(235, 174, 133, 0.3);
 }
+
