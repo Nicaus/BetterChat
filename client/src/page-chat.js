@@ -3,10 +3,14 @@ import Chat from './Chat.vue'
 import {registerCallbacks, sendMessage, signout, chatMessageLoop} from './chat-api';
 
 new Vue({
-    el: 'container',
+    el: '#main',
     components: { Chat },
     template: '<Chat/>'
 })
+
+//- La page chat doit utiliser la librarie Vue.js afin d'afficher les messages 
+// (ceux qui arrivent dans la fonction newMessage du fichier chat.js). 
+// Pour la liste des membres connectés, vous pouvez utiliser Vue.js, ou le DOM.
 
 window.addEventListener("load", () => {
     document.querySelector("textarea").onkeyup = function (evt) {
