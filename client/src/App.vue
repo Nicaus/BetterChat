@@ -1,7 +1,7 @@
 <template>
-    <div class="centered" style="color: black;">
-        <div v-for="messages in message" v-bind:key="messages.path">
-            <!-- {{ messages }} dadasdasd -->sadasdasd
+    <div style="color: black;">
+        <div class="centered" v-for="message in messages" v-bind:key="message.id">
+            {{ message.content }} 
         </div>
     </div>
 </template>
@@ -16,8 +16,8 @@ import {messageList} from './page-chat'
         name: "App",
         data(){
             return{
-                message: messageList
-            }
+                messages: messageList
+            };
         }
-    }
+    };
 </script>

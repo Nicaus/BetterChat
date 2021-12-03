@@ -8,6 +8,14 @@ import {registerCallbacks, sendMessage, signout, chatMessageLoop} from './chat-a
 
 export let messageList = []
 
+let id = 0;
+
+new Vue({
+    el: '#message',
+    components: { App },
+    template: '<App/>'
+})
+
 window.addEventListener("load", () => {
     document.querySelector("textarea").onkeyup = function (evt) {
         sendMessage(evt, this)
@@ -15,18 +23,15 @@ window.addEventListener("load", () => {
     document.querySelector("#sign-out-btn").onclick = signout;
     registerCallbacks(newMessage, memberListUpdate);
     chatMessageLoop();
-
-
-    new Vue({
-        el: '#main',
-        components: { App },
-        template: '<App/>'
-    })
 })
 
 // Lorsqu'un nouveau message doit être affiché à l'écran, cette fonction est appelée
 export const newMessage = (fromUser, message, isPrivate) => {
     console.log(fromUser, message, isPrivate);
+    messageList.push({
+        content: fromUser + ": " + message,
+        id: id++
+    });
 }
 
 // À chaque 2-3 secondes, cette fonction est appelée. Il faudra donc mettre à jour la liste des membres

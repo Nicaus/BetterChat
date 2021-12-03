@@ -97,7 +97,7 @@ a{
     transform: translate(-50%, -50%);
     border: 7px solid rgb(231, 145, 88);
     font-size: 20px;
-    color: white;
+    /* color: white; */
     border-radius: 20px;
     padding: 20px;
 }
