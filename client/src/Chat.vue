@@ -1,6 +1,8 @@
 <template>
     <div class="centered" style="color: black;">
-     {{ message }} 
+     <div v-for="messages in message" v-bind:key="messages.value">
+        {{ message }} 
+     </div>
     </div>
 </template>
 
@@ -9,12 +11,12 @@
 <!-- Pour la liste des membres connectés, vous pouvez utiliser Vue.js, ou le DOM.-->
 
 <script>
-import {newMessage} from './page-chat'
+import {messageList} from './page-chat'
     export default {
         name: "Chat",
         data(){
             return{
-                message: newMessage
+                message: messageList
             }
         }
     }

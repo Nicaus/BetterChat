@@ -6,6 +6,8 @@ import {registerCallbacks, sendMessage, signout, chatMessageLoop} from './chat-a
 // (ceux qui arrivent dans la fonction newMessage du fichier chat.js). 
 // Pour la liste des membres connectés, vous pouvez utiliser Vue.js, ou le DOM.
 
+export let messageList = []
+
 window.addEventListener("load", () => {
     document.querySelector("textarea").onkeyup = function (evt) {
         sendMessage(evt, this)
