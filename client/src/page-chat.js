@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Chat from './Chat.vue'
+import App from './App.vue'
 import {registerCallbacks, sendMessage, signout, chatMessageLoop} from './chat-api';
 
 //- La page chat doit utiliser la librarie Vue.js afin d'afficher les messages 
@@ -19,8 +19,8 @@ window.addEventListener("load", () => {
 
     new Vue({
         el: '#main',
-        components: { Chat },
-        template: '<Chat/>'
+        components: { App },
+        template: '<App/>'
     })
 })
 
