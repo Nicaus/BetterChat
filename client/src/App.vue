@@ -1,7 +1,9 @@
 <template>
-    <div style="color: black;">
-        <div class="centered" v-for="message in messages" v-bind:key="message.id">
-            {{ message.content }} 
+    <div class="squares" style="color: black;">
+        <div class="square">
+            <div v-for="message in messages" v-bind:key="message.id">
+                {{ message.content }} 
+            </div>
         </div>
     </div>
 </template>

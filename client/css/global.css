@@ -28,6 +28,7 @@ h1{
     font-size: 40px;
     cursor: default;
 }
+
 h1:hover{
     color: white;
 }
@@ -49,12 +50,12 @@ input{
     position: relative;
 }
 
-.hover:hover{
-    color: rgb(235, 174, 133);
-}
-
 a{
     text-decoration: none;
+}
+
+.hover:hover{
+    color: rgb(235, 174, 133);
 }
 
 .button{
@@ -115,3 +116,7 @@ a{
     background-color: rgba(235, 174, 133, 0.3);
 }
 
+#main{
+    display: flex;
+    justify-content: space-around;
+}

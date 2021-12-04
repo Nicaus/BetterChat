@@ -7,9 +7,6 @@ import {registerCallbacks, sendMessage, signout, chatMessageLoop} from './chat-a
 // Pour la liste des membres connectés, vous pouvez utiliser Vue.js, ou le DOM.
 
 export let messageList = []
-
-let id = 0;
-
 new Vue({
     el: '#message',
     components: { App },
@@ -26,6 +23,7 @@ window.addEventListener("load", () => {
 })
 
 // Lorsqu'un nouveau message doit être affiché à l'écran, cette fonction est appelée
+let id = 0;
 export const newMessage = (fromUser, message, isPrivate) => {
     console.log(fromUser, message, isPrivate);
     messageList.push({
