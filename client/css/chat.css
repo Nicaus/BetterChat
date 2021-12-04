@@ -14,7 +14,7 @@
     border-width: 3px;
     border-color: rgb(231, 145, 88);
     border-radius: 10px;
-    background-color: rgba(235, 174, 133, 0.3);
+    background-color: rgba(235, 174, 133, 0.7);
     overflow-y: scroll;
     scroll-snap-type: y proximity;
 }

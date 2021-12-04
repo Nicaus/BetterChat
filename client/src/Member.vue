@@ -1,13 +1,8 @@
 <template>
     <div class="squares" style="color: black;">
-        <div class="square" style="width: 250px">
+        <div class="square">
             <div v-for="member in members" v-bind:key="member.id">
                 {{ member.people }} 
-            </div>
-        </div>
-        <div class="square">
-            <div v-for="message in messages" v-bind:key="message.id">
-                {{ message.content }} 
             </div>
         </div>
     </div>
@@ -18,12 +13,11 @@
 <!-- Pour la liste des membres connectés, vous pouvez utiliser Vue.js, ou le DOM.-->
 
 <script>
-import {messageList, memberList} from './page-chat'
+import {memberList} from './page-chat'
     export default {
-        name: "App",
+        name: "Member",
         data(){
             return{
-                messages: messageList,
                 members: memberList
             };
         }

@@ -7,11 +7,18 @@ import {registerCallbacks, sendMessage, signout, chatMessageLoop} from './chat-a
 // Pour la liste des membres connectés, vous pouvez utiliser Vue.js, ou le DOM.
 
 export let messageList = []
+export let memberList = []
 new Vue({
     el: '#message',
     components: { App },
     template: '<App/>'
 })
+
+// new Vue({
+//     el: '#member',
+//     components: { Member },
+//     template: '<Member/>'
+// })
 
 window.addEventListener("load", () => {
     document.querySelector("textarea").onkeyup = function (evt) {
@@ -32,8 +39,13 @@ export const newMessage = (fromUser, message, isPrivate) => {
     });
 }
 
+let id2 = 0
 // À chaque 2-3 secondes, cette fonction est appelée. Il faudra donc mettre à jour la liste des membres
 // connectés dans votre interface.
 const memberListUpdate = members => {
     console.log(members);
+    memberList.push({
+        people: members,
+        id2: id2++
+    })
 }
