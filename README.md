@@ -5,8 +5,8 @@ Chaque page presente un skater different que j'admire
 ## Register
 
 Usage de Canvas
-- Sprite de Skateboard (modifié sur Photoshop) qui agis comme un bouton
-> Le sprite a du etre convertis d'un gif en sprite utilisant [ezgif], puis ensuite mis dans photoshop pour enlever le background et ajouter le texte par dessus
+- Sprite de Skateboard qui agis comme un bouton
+> Le sprite a du etre convertis d'un gif en sprite utilisant [ezGIF], puis ensuite mis dans photoshop pour enlever le background et ajouter le texte par dessus
 
 ## Index
 
@@ -20,5 +20,5 @@ Usage de Vue.js
 - sdasdsa
 
 
-[ezgif]: <https://ezgif.com/gif-to-sprite>
+[ezGIF]: <https://ezgif.com/gif-to-sprite>
 [Behance]: <https://www.behance.net/gallery/72800961/WHOOP-THIS-ARCADE>
