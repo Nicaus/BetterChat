@@ -43,6 +43,7 @@ let id2 = 0
 // À chaque 2-3 secondes, cette fonction est appelée. Il faudra donc mettre à jour la liste des membres
 // connectés dans votre interface.
 const memberListUpdate = members => {
+    memberList.splice(0, 1)
     console.log(members);
     memberList.push({
         people: members,

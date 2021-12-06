@@ -1,13 +1,17 @@
 <template>
     <div class="squares" style="color: black;">
-        <div class="square" style="width: 250px">
+        <div class="square" style="width: 250px; overflow-y: auto;">
             <div v-for="member in members" v-bind:key="member.id">
-                {{ member.people }} 
+                <div v-for="i in member.people.length">
+                    {{ member.people[i] }}
+                </div>
             </div>
         </div>
         <div class="square">
             <div v-for="message in messages" v-bind:key="message.id">
-                {{ message.content }} 
+                <div>
+                    {{ message.content }}
+                </div>
             </div>
         </div>
     </div>
