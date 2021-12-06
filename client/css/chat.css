@@ -16,18 +16,12 @@
     border-radius: 10px;
     background-color: rgba(235, 174, 133, 0.7);
     overflow-y: scroll;
+    overflow-wrap: break-word;
 }
   
 .squares .square p {
     vertical-align: text-bottom;
     margin: 0 auto;
-}
-
-.reversed{
-    overflow-y: auto;
-    /* scroll-snap-type: y proximity; */
-    display: flex;
-    flex-direction: column-reverse;
 }
 
 .boxed {

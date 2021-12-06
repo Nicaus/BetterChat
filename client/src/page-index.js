@@ -5,7 +5,7 @@ import { GreenSkater } from './sprite/GreenSkater';
 import { BlondeSkater } from './sprite/BlondeSkater';
 export let spriteList = [];
 
-export function sprites(sprite, delay) {
+export function sprites(sprite, delay) { 
     setInterval(function(){ 
         spriteList.push(new sprite);
     }, delay);

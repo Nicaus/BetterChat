@@ -1,17 +1,10 @@
 import { register } from './chat-api';
-import { BlondeSkater } from './sprite/BlondeSkater';
-import { GirlSkater } from './sprite/GirlSkater';
-import { GreenSkater } from './sprite/GreenSkater';
-import { Running } from './sprite/Running'
 import { Skateboard } from './sprite/Skateboard';
 
 export let canvas = null;
 export let ctx = null;
 export let spriteList = [];
-export let backgroundImage = new Image();
 
-export let leftArrowOn = false;
-export let rightArrowOn = false;
 
 window.addEventListener("load", () => {
     document.querySelector("form").onsubmit = function () {
