@@ -17,7 +17,7 @@ Usage de DOM et Canvas
 ## Chat
 
 Usage de Vue.js
-- sdasdsa
+- Le seul probleme que j'ai c'est le scrollage automatique qui ne marche pas, le reste du projet c'est tres bien passée aussinon
 
 
 [ezGIF]: <https://ezgif.com/gif-to-sprite>
