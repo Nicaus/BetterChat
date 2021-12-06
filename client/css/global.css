@@ -118,3 +118,23 @@ a{
     display: flex;
     justify-content: space-around;
 }
+
+#api-message{
+    display: grid;
+    top: 25%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: rgb(231, 145, 88);
+}
+
+#centerImg{
+    display: grid;
+    top: 8%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: rgb(231, 145, 88);
+}

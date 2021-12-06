@@ -31,5 +31,5 @@ import {messageList, memberList} from './page-chat'
                 members: memberList
             };
         }
-    };
+    }
 </script>

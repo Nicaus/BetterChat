@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import {registerCallbacks, sendMessage, signout, chatMessageLoop} from './chat-api';
+import { ctx } from './page-register';
 
 //- La page chat doit utiliser la librarie Vue.js afin d'afficher les messages 
 // (ceux qui arrivent dans la fonction newMessage du fichier chat.js). 
@@ -8,6 +9,7 @@ import {registerCallbacks, sendMessage, signout, chatMessageLoop} from './chat-a
 
 export let messageList = []
 export let memberList = []
+export let image = new Image;
 new Vue({
     el: '#message',
     components: { App },
